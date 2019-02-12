@@ -12,7 +12,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var barTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var prototypeCell: UITableViewCell!
     
     
     override func viewDidLoad() {
@@ -39,6 +38,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
+        return 65
     }
 }
 
