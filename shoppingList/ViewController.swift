@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var barTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
+    var items: [Item] = []
     
     
     override func viewDidLoad() {
@@ -19,6 +20,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
         tableView.delegate = self
         
+        let item1 = Item(name: "milk")
+        let item2 = Item(name: "eggs")
+        items = [item1, item2]
     }
 
     @IBAction func whenBarButtonPressed(_ sender: UIBarButtonItem) {
