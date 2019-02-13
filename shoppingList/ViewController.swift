@@ -24,6 +24,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let item2 = Item(name: "eggs")
         items = [item1, item2]
         let item3 = Item(name: "bread")
+        items.append(item3)
     }
 
     @IBAction func whenBarButtonPressed(_ sender: UIBarButtonItem) {
