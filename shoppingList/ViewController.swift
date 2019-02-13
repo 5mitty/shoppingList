@@ -29,7 +29,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     @IBAction func whenBarButtonPressed(_ sender: UIBarButtonItem) {
-        if let newItemName = barTextField?.text {
+        if let newItemName = barTextField?.text, newItemName != "" {
             let newItem = Item(name: newItemName, amount: 0)
             items.append(newItem)
             tableView.reloadData()
