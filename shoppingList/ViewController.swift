@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var barTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     var items: [Item] = []
+    @IBOutlet weak var cellAmountLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -20,15 +21,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
         tableView.delegate = self
         
-        let item1 = Item(name: "milk")
-        let item2 = Item(name: "eggs")
+        let item1 = Item(name: "milk", amount: 2)
+        let item2 = Item(name: "eggs", amount: 5)
         items = [item1, item2]
-        let item3 = Item(name: "bread")
+        let item3 = Item(name: "bread", amount: 1)
         items.append(item3)
     }
 
     @IBAction func whenBarButtonPressed(_ sender: UIBarButtonItem) {
-        
+        if let newItemName = barTextField?.text {
+            let newItem = Item(name: newItemName, amount: 0)
+            items.append(newItem)
+            tableView.reloadData()
+        }
         
     }
     
@@ -38,6 +43,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")!
+        //cell.
         let currentItemName = items[indexPath.row].name
         cell.textLabel?.text = currentItemName
         return cell
@@ -45,7 +51,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 65
+        return 66
     }
 }
 

@@ -9,7 +9,9 @@
 import Foundation
 class Item {
     var name: String
-    init(name: String) {
+    var amount: Int
+    init(name: String, amount: Int) {
         self.name = name
+        self.amount = amount
     }
 }

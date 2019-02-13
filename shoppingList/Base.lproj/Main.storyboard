@@ -29,17 +29,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="65.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q44-kv-0xh">
+                                                    <rect key="frame" x="251" y="0.0" width="124" height="65"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vo4-iP-EQo">
-                                                    <rect key="frame" x="15" y="34" width="42" height="21"/>
+                                                    <rect key="frame" x="15" y="37" width="42" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q44-kv-0xh">
-                                                    <rect key="frame" x="251" y="0.0" width="124" height="65"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -72,6 +72,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="barTextField" destination="Qqg-OR-0Tt" id="Lxm-KU-3gl"/>
+                        <outlet property="cellAmountLabel" destination="vo4-iP-EQo" id="QSQ-kN-nst"/>
                         <outlet property="tableView" destination="q2W-qU-D5g" id="6kt-hW-Oj4"/>
                     </connections>
                 </viewController>
