@@ -23,6 +23,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let item1 = Item(name: "milk")
         let item2 = Item(name: "eggs")
         items = [item1, item2]
+        let item3 = Item(name: "bread")
     }
 
     @IBAction func whenBarButtonPressed(_ sender: UIBarButtonItem) {
@@ -36,7 +37,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")!
-        cell.textLabel?.text = "Hello"
+        let currentItemName = items[indexPath.row].name
+        cell.textLabel?.text = currentItemName
         return cell
     }
     
