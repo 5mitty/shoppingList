@@ -13,7 +13,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var barTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     var items: [Item] = []
-    @IBOutlet weak var cellAmountLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -45,6 +44,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")!
         //cell.
         let currentItemName = items[indexPath.row].name
+        let currentItemQuantity = items[indexPath.row].amount
+        cell.detailTextLabel?.text = "Quantity: \(currentItemQuantity)"
         cell.textLabel?.text = currentItemName
         return cell
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56034ED622148B24009D5806 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56034ED522148B24009D5806 /* CustomCell.swift */; };
 		56628AA5220DF0F100322AE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56628AA4220DF0F100322AE0 /* AppDelegate.swift */; };
 		56628AA7220DF0F100322AE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56628AA6220DF0F100322AE0 /* ViewController.swift */; };
 		56628AAA220DF0F100322AE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56628AA8220DF0F100322AE0 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56034ED522148B24009D5806 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		56628AA1220DF0F100322AE0 /* shoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56628AA4220DF0F100322AE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56628AA6220DF0F100322AE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				56628AA4220DF0F100322AE0 /* AppDelegate.swift */,
 				56628AA6220DF0F100322AE0 /* ViewController.swift */,
 				56628AA8220DF0F100322AE0 /* Main.storyboard */,
+				56034ED522148B24009D5806 /* CustomCell.swift */,
 				56F373AE2213393E006F8B99 /* Item.swift */,
 				56628AAB220DF0F300322AE0 /* Assets.xcassets */,
 				56628AAD220DF0F300322AE0 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				56628AA7220DF0F100322AE0 /* ViewController.swift in Sources */,
 				56F373AF2213393E006F8B99 /* Item.swift in Sources */,
+				56034ED622148B24009D5806 /* CustomCell.swift in Sources */,
 				56628AA5220DF0F100322AE0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
